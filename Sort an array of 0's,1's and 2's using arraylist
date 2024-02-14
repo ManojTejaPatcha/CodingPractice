@@ -1,0 +1,43 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int[] arr={1,1,0,2,0,1,1,0,2,2,2};
+	    List<Integer> al_0=new ArrayList<Integer>();
+	    List<Integer> al_1=new ArrayList<Integer>();
+	    List<Integer> al_2=new ArrayList<Integer>();
+	    
+	    for(int i=0;i<arr.length;i++)
+	    {
+	        if(arr[i]==0)
+	        al_0.add(arr[i]);
+	        else if(arr[i]==1)
+	        al_1.add(arr[i]);
+	        else
+	        al_2.add(arr[i]);
+	    }
+
+		List<Integer> combined = new ArrayList<Integer>();
+		combined.addAll(al_0);
+		combined.addAll(al_1);
+		combined.addAll(al_2);
+		
+		        Collections.sort(combined);
+
+		
+		for(int i=0;i<combined.size();i++)
+		{
+		    System.out.println(combined.get(i));
+		}
+
+
+	}
+}
